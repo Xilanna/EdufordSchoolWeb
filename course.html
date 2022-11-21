@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="with=divice-width, initial-scale=1.0">
+    <title>Eduford School of Web Design</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="course.html">Курси</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Наші курси</h1>
+</section>
+
+<!------ Course ------>
+
+<section class="course">
+   <h1>Курси, які ми пропонуємо</h1>
+   <p>У нас великий вибір курсів, кожен тут знайде своє покликання</p>
+   <div class="row">
+       <div class="course-col">
+           <h3>UX/UI Web-designer</h3>
+           <p>UI/UX-дизайн сайтів та програм, проектування та створення дизайну та анімації інтерфейсів.</p>
+       </div>
+       <div class="course-col">
+           <h3>HTML + CSS Basics</h3>
+           <p>На цьому курсі ти ознайомишся з базовими конструкціями мови розмітки HTML та мовою стилів CSS.</p>
+       </div>
+       <div class="course-col">
+           <h3>Photoshop i Illustrator</h3>
+           <p>Навчишся творчо мислити. Дізнаєшся як працювати з корекцією кольору та анімацією.</p>
+       </div>
+   </div>
+   <div class="row">
+       <div class="course-col">
+           <h3>Знайомство з Figma</h3>
+           <p>Це насичений та послідовний курс про, певно, головний редактор вебдизайнерів та дизайнерів інтерфейсів.</p>
+       </div>
+       <div class="course-col">
+           <h3>JavaScript з нуля</h3>
+           <p>Після курсу ти станеш гуру розробки та зможеш працювати у крутих IT-компаніях.</p>
+       </div>
+       <div class="course-col">
+           <h3>Aнглійськa для<br>IT-фахівців</h3>
+           <p>Підвищи з нами свій ltvel в англійській мовi.</p>
+       </div>
+   </div>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Eduford School of Web Design</h4>
+    <p>За нами майбутнє!</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by a good person</p>
+</section>
+
+<!------JavaScript for ToggleMenu ------>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
